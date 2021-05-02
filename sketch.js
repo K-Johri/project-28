@@ -43,7 +43,7 @@ function setup() {
   //create launcherObject here
 launcherObject = new Launcher(stoneObj.body,{
   x : 235,
-  y : 220
+  y : 420
 });
 
 	Engine.run(engine);
@@ -101,7 +101,7 @@ function mouseDragged(){
 
 //create mouseReleased function here
 function mouseReleased() {
-  launcherObject.fly;
+  launcherObject.fly();
 }
 
 //create keyPressed function here
@@ -109,7 +109,7 @@ function keyPressed() {
   if(keyCode === 32){
     Matter.Body.setPosition(stoneObj.body,{
       x : 235,
-      y : 220
+      y : 420
     })
     launcherObject.attach(stoneObj.body)
   }
